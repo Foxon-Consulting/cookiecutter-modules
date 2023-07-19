@@ -1,7 +1,6 @@
 formatter: markdown table
 
 recursive:
-  enabled: true
   path: .
 
 output:
