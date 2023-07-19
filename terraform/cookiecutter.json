@@ -1,5 +1,6 @@
 {
     "module_name": "Module Name",
-    "__project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
-    "__module_name_formatted": "{{ cookiecutter.project_name|lower|replace(' ', '_') }}"
+    "terraform_min_version" : "0.12",
+    "__project_slug": "{{ cookiecutter.module_name|lower|replace(' ', '-') }}",
+    "__module_name_formatted": "{{ cookiecutter.module_name|lower|replace(' ', '_') }}"
 }
