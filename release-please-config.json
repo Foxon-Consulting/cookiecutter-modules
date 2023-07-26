@@ -1,13 +1,24 @@
 {
   "packages": {
-    ".": {
-      "changelog-path": "CHANGELOG.md",
+    "./tf-composition": {
+      "release-type": "terraform-module",
+      "changelog-path": "tf-composition-CHANGELOG.md",
+      "bump-minor-pre-major": false,
+      "bump-patch-for-minor-pre-major": false,
+      "draft": false,
+      "prerelease": false,
+      "include-v-in-tag": false
+    },
+    "./tf-module": {
+      "release-type": "terraform-module",
+      "changelog-path": "tf-module-CHANGELOG.md",
       "bump-minor-pre-major": false,
       "bump-patch-for-minor-pre-major": false,
       "draft": false,
       "prerelease": false,
       "include-v-in-tag": false
     }
+
   },
   "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json"
 }
