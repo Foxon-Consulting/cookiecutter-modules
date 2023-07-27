@@ -1,2 +1,3 @@
-path = "./env/dev/terraform.tfstate"
-workspace_dir = "./env/dev"
+bucket = "foxon-consulting-terraform-states-dev"
+key= "{{ cookiecutter.__project_slug }}/dev/terraform.tfstate"
+region = "eu-west-1"

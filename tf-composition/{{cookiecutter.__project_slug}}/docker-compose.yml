@@ -4,7 +4,7 @@ services:
   ansible_terraform:
     image: ansible_terraform
     ports:
-      - "2222:22"
+      - "{{ cookiecutter.port }}:22"
     volumes:
       - ~/Desktop/Dev/terraform_modules/{{ cookiecutter.__project_slug }}:/home/user/{{ cookiecutter.__project_slug }}
       - ~/Desktop/Dev/key:/home/user/key

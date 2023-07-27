@@ -1,2 +1,3 @@
-path = "./env/prd/terraform.tfstate"
-workspace_dir = "./env/prd"
+bucket = "foxon-consulting-terraform-states-prd"
+key= "{{ cookiecutter.__project_slug }}/prd/terraform.tfstate"
+region = "eu-west-1"
