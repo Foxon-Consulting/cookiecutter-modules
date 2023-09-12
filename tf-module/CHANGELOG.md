@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Foxon-Consulting/cookiecutter/compare/tf-module-1.0.0...tf-module-1.0.1) (2023-09-12)
+
+
+### Bug Fixes
+
+* **terraform:** :bug: add key directory into tf folders ([#15](https://github.com/Foxon-Consulting/cookiecutter/issues/15)) ([1f15bc2](https://github.com/Foxon-Consulting/cookiecutter/commit/1f15bc27fcd65843ca161005204bd6170cba3703))
+
 ## 1.0.0 (2023-09-11)
 
 
