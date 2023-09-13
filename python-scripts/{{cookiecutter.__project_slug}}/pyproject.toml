@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools >= 57.0", "wheel" ]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "{{cookiecutter.__toolbox_name_formatted}}"
+version = "0.0.0"
+description = "{{cookiecutter.toolbox_description}}"
+requires-python = ">={{cookiecutter.python_version}}"
+readme = "README.md"
+authors = [ { name = "{{cookiecutter.author_name}}", email = "{{cookiecutter.author_email}}"}]
+
+dependencies = [
+  "tomli"
+]
+
+[project.optional-dependencies]
+ci = ["black", "coverage", "twine", "pylint"]
+
+[project.scripts]
+{{cookiecutter.__first_script_name_formatted}} = "{{cookiecutter.__folder_name_formatted}}.{{cookiecutter.__first_script_name_formatted}}:main"
