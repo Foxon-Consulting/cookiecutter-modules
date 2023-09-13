@@ -1,5 +1,6 @@
 {
   ".": "1.0.1",
   "tf-module": "1.0.1",
-  "tf-composition": "1.0.1"
+  "tf-composition": "1.0.1",
+  "python-scripts": "0.0.1"
 }
