@@ -1,0 +1,1 @@
+include src/{{ cookiecutter.__folder_name_formatted }}/config.toml
