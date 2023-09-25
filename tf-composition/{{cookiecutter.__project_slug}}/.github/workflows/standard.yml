@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: pre-commit
-        uses: Foxon-Consulting/github-actions/integration/actions/pre-commit@main
+        uses: Foxon-Consulting/github-actions/integration/common/pre-commit@main
 
   integration:
     uses: Foxon-Consulting/github-actions/.github/workflows/{{ cookiecutter.__cicd_type }}_integration.yml@main
@@ -24,7 +24,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     steps:
       - name: releasing
-        uses: Foxon-Consulting/github-actions/delivery/actions/release-please@main
+        uses: Foxon-Consulting/github-actions/delivery/common/release-please@main
 
   delivery:
     needs:
