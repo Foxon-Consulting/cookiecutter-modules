@@ -6,6 +6,7 @@
     "python_version": "3.11",
     "author_name": "John Doe",
     "author_email": "johndoe@gmail.com",
+    "___cicd_type": "python",
     "__project_slug": "{{ cookiecutter.toolbox_name |lower|replace(' ', '-') }}",
     "__toolbox_name_formatted": "{{ cookiecutter.toolbox_name|lower|replace(' ', '_') }}",
     "__folder_name_formatted": "{{ cookiecutter.folder_name|lower|replace(' ', '_') }}",
