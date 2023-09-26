@@ -29,8 +29,7 @@ jobs:
 
   delivery:
     needs:
-      - pre-commit
-      - integration
+      - releasing
     if: github.ref == 'refs/heads/main'
     permissions:
       contents: write
