@@ -15,7 +15,7 @@ jobs:
         uses: Foxon-Consulting/github-actions/integration/common/pre-commit@main
 
   integration:
-    uses: Foxon-Consulting/github-actions/.github/workflows/{{ cookiecutter.__cicd_type }}_integration.yml@main
+    uses: Foxon-Consulting/github-actions/.github/workflows/tf-composition_integration.yml@main
 
   releasing:
     runs-on: ubuntu-latest
@@ -29,13 +29,12 @@ jobs:
 
   delivery:
     needs:
-      - pre-commit
-      - integration
+      - releasing
     if: github.ref == 'refs/heads/main'
     permissions:
       contents: write
       pull-requests: write
-    uses: Foxon-Consulting/github-actions/.github/workflows/{{ cookiecutter.__cicd_type }}_delivery.yml@main
+    uses: Foxon-Consulting/github-actions/.github/workflows/tf-composition_delivery.yml@main
 
   deployment:
     needs:
@@ -45,4 +44,4 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    uses: Foxon-Consulting/github-actions/.github/workflows/{{ cookiecutter.__cicd_type }}_deployment.yml@main
+    uses: Foxon-Consulting/github-actions/.github/workflows/tf-composition_deployment.yml@main

@@ -6,11 +6,11 @@
     "python_version": "3.11",
     "author_name": "John Doe",
     "author_email": "johndoe@gmail.com",
-    "__cicd_type": "python",
     "__project_slug": "{{ cookiecutter.toolbox_name |lower|replace(' ', '-') }}",
     "__toolbox_name_formatted": "{{ cookiecutter.toolbox_name|lower|replace(' ', '_') }}",
     "__folder_name_formatted": "{{ cookiecutter.folder_name|lower|replace(' ', '_') }}",
     "__first_script_name_formatted": "{{ cookiecutter.first_script_name|lower|replace(' ', '_') }}",
+    "__first_script_test_name_formatted": "{{ cookiecutter.first_script_name | title | replace(' ', '') }}",
     "__prompts__": {
         "folder_name": "will name a folder into src to put your scripts in. Good to group scripts by category"
     }
