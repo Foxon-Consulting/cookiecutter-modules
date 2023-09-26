@@ -15,7 +15,7 @@ jobs:
         uses: Foxon-Consulting/github-actions/integration/common/pre-commit@main
 
   integration:
-    uses: Foxon-Consulting/github-actions/.github/workflows/{{ cookiecutter.__cicd_type }}_integration.yml@main
+    uses: Foxon-Consulting/github-actions/.github/workflows/tf-module_integration.yml@main
 
   releasing:
     runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    uses: Foxon-Consulting/github-actions/.github/workflows/{{ cookiecutter.__cicd_type }}_delivery.yml@main
+    uses: Foxon-Consulting/github-actions/.github/workflows/tf-module_delivery.yml@main
 
   deployment:
     needs:
@@ -45,4 +45,4 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    uses: Foxon-Consulting/github-actions/.github/workflows/{{ cookiecutter.__cicd_type }}_deployment.yml@main
+    uses: Foxon-Consulting/github-actions/.github/workflows/tf-module_deployment.yml@main

@@ -15,7 +15,9 @@ jobs:
         uses: Foxon-Consulting/github-actions/integration/common/pre-commit@main
 
   integration:
-    uses: Foxon-Consulting/github-actions/.github/workflows/{{cookiecutter.__cicd_type}}_integration.yml@main
+    uses: Foxon-Consulting/github-actions/.github/workflows/python_integration.yml@main
+    with:
+      python_version: "{{cookiecutter.python_version}}"
 
   releasing:
     runs-on: ubuntu-latest
@@ -35,7 +37,7 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    uses: Foxon-Consulting/github-actions/.github/workflows/{{cookiecutter.__cicd_type}}_delivery.yml@main
+    uses: Foxon-Consulting/github-actions/.github/workflows/python_delivery.yml@main
 
   deployment:
     needs:
@@ -45,4 +47,4 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    uses: Foxon-Consulting/github-actions/.github/workflows/{{cookiecutter.__cicd_type}}_deployment.yml@main
+    uses: Foxon-Consulting/github-actions/.github/workflows/python_deployment.yml@main
