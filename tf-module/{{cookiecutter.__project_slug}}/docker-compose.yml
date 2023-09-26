@@ -1,13 +1,13 @@
 version: '3'
 
 services:
-  ansible_terraform:
-    image: ansible_terraform
+  devops-toolkit:
+    image: devops_toolkit
     ports:
       - "{{ cookiecutter.port }}:22"
     volumes:
       - ./:/home/user/{{ cookiecutter.__project_slug }}
       - ./key:/home/user/key
-      - ~/.aws:/home/user/.aws
-    container_name: ansible_terraform_container_{{ cookiecutter.__module_name_formatted }}
+      - ~/.aws:/root/.aws
+    container_name: "{{cookiecutter.__module_name_formatted}}_cn"
     restart: unless-stopped

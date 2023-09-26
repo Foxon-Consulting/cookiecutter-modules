@@ -16,6 +16,8 @@ jobs:
 
   integration:
     uses: Foxon-Consulting/github-actions/.github/workflows/tf-composition_integration.yml@main
+    with:
+      env: dev # Add more environment if needed
 
   releasing:
     runs-on: ubuntu-latest
