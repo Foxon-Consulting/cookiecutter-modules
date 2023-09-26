@@ -35,11 +35,15 @@ def main():
     required=True,
   )
 
+  result = _{{cookiecutter.__first_script_name_formatted}}(**vars(script_parser.parse_args()))
+
   # Example how to access config toml file
   logging.debug(config)
 
   # Using **vars() to convert Namespace to dict
-  logging.debug(_{{cookiecutter.__first_script_name_formatted}}(**vars(script_parser.parse_args())))
+  logging.debug(result)
+
+  return result
 
 if __name__ == '__main__':
   main()
