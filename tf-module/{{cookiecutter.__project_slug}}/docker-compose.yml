@@ -7,7 +7,7 @@ services:
       - "{{ cookiecutter.port }}:22"
     volumes:
       - ./:/home/user/{{ cookiecutter.__project_slug }}
-      - ./key:/root/key
-      - ~/.aws:/home/user/.aws
+      - ./key:/home/user/key
+      - ~/.aws:/root/.aws
     container_name: "{{cookiecutter.__module_name_formatted}}_cn"
     restart: unless-stopped

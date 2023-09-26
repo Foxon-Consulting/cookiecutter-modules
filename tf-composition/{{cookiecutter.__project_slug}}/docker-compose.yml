@@ -8,6 +8,6 @@ services:
     volumes:
       - ./:/home/user/{{ cookiecutter.__project_slug }}
       - ./key:/home/user/key
-      - ~/.aws:/home/user/.aws
+      - ~/.aws:/root/.aws
     container_name: "{{ cookiecutter.__module_name_formatted }}_cn"
     restart: unless-stopped
