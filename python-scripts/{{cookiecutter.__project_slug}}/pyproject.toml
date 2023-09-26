@@ -15,7 +15,13 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-ci = ["black", "coverage", "twine", "pylint"]
+ci = ["black", "coverage", "pylint", "flake8"]
+cd = ["twine"]
 
 [project.scripts]
 {{cookiecutter.__first_script_name_formatted}} = "{{cookiecutter.__folder_name_formatted}}.{{cookiecutter.__first_script_name_formatted}}:main"
+
+[tool.black]
+line-length = 79
+use-tabs = false
+tab-width = 2

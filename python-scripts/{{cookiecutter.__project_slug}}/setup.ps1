@@ -11,3 +11,4 @@ python -m venv .venv
 
 # Step 3: Install the Python module in development mode
 pip install -e .
+pip install .[ci]
