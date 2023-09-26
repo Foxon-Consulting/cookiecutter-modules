@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.0](https://github.com/Foxon-Consulting/cookiecutter/compare/1.0.1...1.1.0) (2023-09-26)
+
+
+### Features
+
+* **python-scripts:** :sparkles: finish python scripts full automated ([#21](https://github.com/Foxon-Consulting/cookiecutter/issues/21)) ([bc0db08](https://github.com/Foxon-Consulting/cookiecutter/commit/bc0db0836bf9680ea526e0797b7278fb6cdd43d9))
+* tf-composition module updated ([#22](https://github.com/Foxon-Consulting/cookiecutter/issues/22)) ([4f6f1f6](https://github.com/Foxon-Consulting/cookiecutter/commit/4f6f1f67e9e3f03d91c1e14846607bdd6f3c376d))
+
+
+### Bug Fixes
+
+* :ambulance: typo in cicd_type hidden parameter ([d6e3a0d](https://github.com/Foxon-Consulting/cookiecutter/commit/d6e3a0d8fc043c795e81545b73882183caaee70e))
+* **python-scripts:** :white_check_mark: python scripts cookiecutter ready ([6d75645](https://github.com/Foxon-Consulting/cookiecutter/commit/6d756455f36079025d147c45166a26e75849bfe3))
+
 ## [1.0.1](https://github.com/Foxon-Consulting/cookiecutter/compare/1.0.0...1.0.1) (2023-09-12)
 
 
