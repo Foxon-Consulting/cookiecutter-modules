@@ -4,11 +4,13 @@ logging.getLogger().setLevel(logging.DEBUG)
 
 from . import config
 
+
 def _{{cookiecutter.__first_script_name_formatted}}(argA, argB):
     return {
         "argA": argA,
         "argB": argB,
     }
+
 
 def main():
     import argparse
@@ -45,6 +47,7 @@ def main():
     logging.debug(result)
 
     return result
+
 
 if __name__ == "__main__":
     main()

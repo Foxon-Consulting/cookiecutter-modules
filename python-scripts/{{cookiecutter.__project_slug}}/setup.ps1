@@ -12,3 +12,10 @@ python -m venv .venv
 # Step 3: Install the Python module in development mode
 pip install -e .
 pip install .[ci]
+
+# Initialize the repository
+git init
+git add .
+git commit -m "feat!: :tada: python cookiecutter scaffold"
+
+pre-commit install
