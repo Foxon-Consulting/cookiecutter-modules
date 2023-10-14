@@ -15,6 +15,7 @@ pip install .[ci]
 
 # Initialize the repository
 git init
+git branch -M main
 git add .
 git commit -m "feat!: :tada: cookiecutter scaffold"
 
