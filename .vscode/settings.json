@@ -23,6 +23,7 @@
     "terraform",
     "python-scripts",
     "tf-module",
-    "tf-composition"
+    "tf-composition",
+    "simple"
   ]
 }

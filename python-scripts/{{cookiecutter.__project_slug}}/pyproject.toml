@@ -3,9 +3,9 @@ requires = ["setuptools >= 57.0", "wheel" ]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "{{cookiecutter.__toolbox_name_formatted}}"
+name = "{{cookiecutter.__project_name_formatted}}"
 version = "0.0.0"
-description = "{{cookiecutter.toolbox_description}}"
+description = "{{cookiecutter.project_description}}"
 requires-python = ">={{cookiecutter.python_version}}"
 readme = "README.md"
 authors = [ { name = "{{cookiecutter.author_name}}", email = "{{cookiecutter.author_email}}"}]
