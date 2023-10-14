@@ -1,0 +1,7 @@
+{
+    "project_name": "project Name",
+    "project_description": "Project description",
+    "author_name": "John Doe",
+    "author_email": "johndoe@gmail.com",
+    "__project_slug": "{{ cookiecutter.project_name |lower|replace(' ', '-') }}"
+}
