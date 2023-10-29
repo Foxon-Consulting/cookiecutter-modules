@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  {{ cookiecutter.__project_slug }}:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2222:22"
+    container_name: {{ cookiecutter.__project_slug }}_cn
+    restart: unless-stopped
