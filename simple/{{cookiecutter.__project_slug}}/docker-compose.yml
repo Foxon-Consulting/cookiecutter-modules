@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  python-toolkit:
+    image: alpine-base:1.0.0
+    volumes:
+      - ./:/{{ cookiecutter.__project_slug }}
+    container_name: "{{cookiecutter.__project_name_formatted}}_cn"
+    restart: unless-stopped
+    command: bash -c "while true; do sleep 1; done"

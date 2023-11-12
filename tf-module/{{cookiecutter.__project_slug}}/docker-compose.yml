@@ -2,7 +2,7 @@ version: '3'
 
 services:
   devops-toolkit:
-    image: devops_toolkit
+    image: devops-toolkit:1.0.0
     ports:
       - "{{ cookiecutter.port }}:22"
     volumes:
@@ -11,3 +11,4 @@ services:
       - ~/.aws:/root/.aws
     container_name: "{{cookiecutter.__module_name_formatted}}_cn"
     restart: unless-stopped
+    command: bash -c "while true; do sleep 1; done"
