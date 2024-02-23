@@ -23,7 +23,7 @@ jobs:
   integration:
     uses: Foxon-Consulting/github-actions/.github/workflows/nextjs_integration.yml@main
     with: # passing this as inputs to
-      artifact-name: "{{cookiecutter.__artifact-name_formatted}}"
+      artifact-name: "{{cookiecutter.__artifact_name_formatted}}"
       deploy-image-name: "s"
 
   # releasing:
