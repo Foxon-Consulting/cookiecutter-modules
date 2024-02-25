@@ -24,7 +24,7 @@ jobs:
     uses: Foxon-Consulting/github-actions/.github/workflows/nextjs_integration.yml@main
     with: # passing this as inputs to
       artifact-name: "{{cookiecutter.__artifact_name_formatted}}"
-      deploy-image-name: "s"
+      deploy-image-name: "{{cookiecutter.__deploy_image_name_formatted}}"
 
   # releasing:
   #   runs-on: ubuntu-latest
@@ -43,12 +43,9 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    uses: Foxon-Consulting/github-actions/.github/workflows/nextjs_delivery.yml@main
+    uses: Foxon-Consulting/github-actions/.github/workflows/nextjs_delivery.yml@feature/next-delivery 
     with:
       deploy-image-name: "{{cookiecutter.__deploy_image_name_formatted}}"
-    secrets:
-      docker-username: ${{ secrets.DOCKERHUB_USERNAME }}
-      docker-password: ${{ secrets.DOCKERHUB_TOKEN }}
 
   deployment:
     needs:
