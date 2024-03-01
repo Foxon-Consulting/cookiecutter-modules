@@ -4,10 +4,9 @@ services:
   node-toolkit:
     image: foxonconsulting/node-toolkit:1.0.0
     ports:
-      - "2222:22"
       - "3000:3000"
     volumes:
       - ./:/home/user/next-app
-    container_name: "{{cookiecutter.__project_slug}}_cn"
+    container_name: "toolkit_cn"
     restart: unless-stopped
     stdin_open: true
