@@ -7,6 +7,6 @@
 #   }
 # }
 
-# teraform {
-#   backend "s3" {}
-# }
+terraform {
+  backend "s3" {}
+}

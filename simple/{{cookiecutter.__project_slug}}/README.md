@@ -1,10 +1,8 @@
 # README
 
 ## Quick setup of environment:
-Use ```./setup.ps1``` or ```setup.sh``` to fast setup your environment. It will:
+Once connected to your {{cookiecutter.__project_name_formatted}}_cn container
+Do ```setup.sh``` to fast setup your environment. It will:
 
-- Create a simple virtual environment .venv
-- Activate the virtual environment
-- Install the package in development mode inside the virtual environment
-
-# Give explanation of each scripts
+- Initiliaze git repository
+- Add all files and do a first commit
