@@ -5,13 +5,11 @@ on:
     branches:
       - main
   push:
-    branches:
-      - "**"
+    branches-ignore:
+      - "release-please--*"
   release:
-    branches:
-      - main
     types:
-      - created
+      - published
 
 jobs:
   pre-commit:

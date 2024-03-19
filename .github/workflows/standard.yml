@@ -5,8 +5,12 @@ on:
     branches:
       - main
   push:
-    branches:
-      - "**"
+    branches-ignore:
+      - "release-please--*"
+  release:
+    types:
+      - published
+
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
@@ -26,6 +30,8 @@ jobs:
     steps:
       - name: releasing
         uses: Foxon-Consulting/github-actions/delivery/common/release-please@main
+        with:
+          RELEASE_PLEASE_TOKEN: ${{ secrets.RELEASE_PLEASE_TOKEN }}
 
   delivery:
     needs:
