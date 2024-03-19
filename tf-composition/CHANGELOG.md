@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.1](https://github.com/Foxon-Consulting/cookiecutter-modules/compare/tf-composition-1.1.0...tf-composition-1.1.1) (2024-03-19)
+
+
+### Bug Fixes
+
+* :bug: fix cicd ([b34d6ec](https://github.com/Foxon-Consulting/cookiecutter-modules/commit/b34d6ec919db70dd6a61a531ae9db2f1a6c09744))
+* :recycle: clean and refactor all cookiecutter ([#30](https://github.com/Foxon-Consulting/cookiecutter-modules/issues/30)) ([d8d2fcf](https://github.com/Foxon-Consulting/cookiecutter-modules/commit/d8d2fcf057733c2d4e2b95cc6e58afdd2bb357d1))
+* :wrench: change base image and toolkit image names ([#26](https://github.com/Foxon-Consulting/cookiecutter-modules/issues/26)) ([d830521](https://github.com/Foxon-Consulting/cookiecutter-modules/commit/d830521e7e52e43ef79ff652d3e9276e9754b6cb))
+
 ## [1.1.0](https://github.com/Foxon-Consulting/cookiecutter/compare/tf-composition-1.0.1...tf-composition-1.1.0) (2023-09-26)
 
 
