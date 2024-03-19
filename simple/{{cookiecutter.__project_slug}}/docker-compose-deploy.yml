@@ -1,11 +1,10 @@
 version: '3'
 
 services:
-  docker-image:
+  deployment:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "2222:22"
+    image: "{{ cookiecutter.__project_slug }}"
     container_name: "{{ cookiecutter.__project_slug }}_cn"
     restart: unless-stopped

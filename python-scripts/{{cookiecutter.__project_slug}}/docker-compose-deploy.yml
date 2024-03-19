@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  deployment:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "{{ cookiecutter.__project_slug }}"
+    ports:
+      - "5000:5000"
+    container_name: "{{ cookiecutter.__project_slug }}_cn"
+    restart: unless-stopped
+    command: bash -c "while true; do sleep 1; done"

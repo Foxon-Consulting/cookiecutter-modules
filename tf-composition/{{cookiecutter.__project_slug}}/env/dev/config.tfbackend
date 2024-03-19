@@ -1,3 +1,3 @@
-bucket = "foxon-consulting-terraform-states-dev"
+bucket = "foxon-consulting-tf-states-npe"
 key= "{{ cookiecutter.__project_slug }}/dev/terraform.tfstate"
 region = "eu-west-1"
