@@ -1,11 +1,11 @@
-# simulates deployment by k8s
 version: "3"
 
 services:
-  nextjs-app-server:
+  deployment:
     build:
       context: .
       dockerfile: Dockerfile
+    image: "{{ cookiecutter.__project_slug }}"
     ports:
       - "3000:80"
     container_name: "{{cookiecutter.__project_slug}}_cn"

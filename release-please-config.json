@@ -6,8 +6,14 @@
   "prerelease": false,
   "include-v-in-tag": false,
   "packages": {
-    ".": {
-      "changelog-path": "CHANGELOG.md"
+    "next-project": {
+      "package-name": "next-project"
+    },
+    "python-scripts": {
+      "package-name": "python-scripts"
+    },
+    "simple": {
+      "package-name": "simple"
     },
     "tf-module": {
       "package-name": "tf-module"

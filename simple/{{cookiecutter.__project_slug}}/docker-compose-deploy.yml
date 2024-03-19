@@ -2,10 +2,9 @@ version: '3'
 
 services:
   deployment:
-    image: foxonconsulting/base-toolkit:1.0.0
-    volumes:
-      - //var/run/docker.sock:/var/run/docker.sock
-      - ./:/{{ cookiecutter.__project_slug }}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "{{ cookiecutter.__project_slug }}"
     container_name: "{{ cookiecutter.__project_slug }}_cn"
     restart: unless-stopped
-    command: bash -c "while true; do sleep 1; done"
