@@ -1,7 +1,7 @@
 {
-  "next-project": "0.0.0",
-  "python-scripts": "0.0.0",
-  "simple": "0.0.0",
-  "tf-composition": "1.1.0",
-  "tf-module": "1.1.0"
+  "next-project": "1.0.0",
+  "python-scripts": "1.0.0",
+  "simple": "1.0.0",
+  "tf-composition": "1.1.1",
+  "tf-module": "1.1.1"
 }
