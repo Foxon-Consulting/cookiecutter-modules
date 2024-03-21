@@ -13,5 +13,8 @@
     "__first_script_test_name_formatted": "{{ cookiecutter.first_script_name | title | replace(' ', '') }}",
     "__prompts__": {
         "folder_name": "will name a folder into src to put your scripts in. Good to group scripts by category"
-    }
+    },
+    "_copy_without_render": [
+        ".github/workflows/*.yml"
+    ]
 }

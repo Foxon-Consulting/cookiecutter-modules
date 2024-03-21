@@ -2,5 +2,8 @@
     "module_name": "Module Name",
     "terraform_min_version" : "0.12",
     "__project_slug": "{{ cookiecutter.module_name|lower|replace(' ', '-') }}",
-    "__module_name_formatted": "{{ cookiecutter.module_name|lower|replace(' ', '_') }}"
+    "__module_name_formatted": "{{ cookiecutter.module_name|lower|replace(' ', '_') }}",
+    "_copy_without_render": [
+        ".github/workflows/*.yml"
+    ]
 }
