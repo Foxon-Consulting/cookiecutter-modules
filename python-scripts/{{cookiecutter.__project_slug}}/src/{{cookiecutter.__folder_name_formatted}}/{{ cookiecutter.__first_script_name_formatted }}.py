@@ -6,6 +6,18 @@ from . import config
 
 
 def _{{cookiecutter.__first_script_name_formatted}}(argA, argB):
+
+    from examples.example1 import get_cat_name, dog_name
+
+    # How to access to the dog name and cat name from another module
+    logging.debug(
+        f"Form Mouodle: The dog name is {dog_name} and the cat name is {get_cat_name()}"
+    )
+
+    # Example how to access config toml file
+    logging.debug(f"from config file: {config}")
+
+    # Return arguments
     return {
         "argA": argA,
         "argB": argB,
