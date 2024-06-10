@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/Foxon-Consulting/cookiecutter-modules/compare/python-scripts-1.0.0...python-scripts-1.0.1) (2024-06-10)
+
+
+### Bug Fixes
+
+* :bug: ignore standard.yml to avoid issue with secrets ([9ea0e74](https://github.com/Foxon-Consulting/cookiecutter-modules/commit/9ea0e743e374ed2071540cb069fbad6c12671305))
+* **python-scripts:** :wheelchair: add example module ([#32](https://github.com/Foxon-Consulting/cookiecutter-modules/issues/32)) ([3609cd4](https://github.com/Foxon-Consulting/cookiecutter-modules/commit/3609cd405e0b86b0e47556e435dcf065aecb9281))
+
 ## 1.0.0 (2024-03-19)
 
 

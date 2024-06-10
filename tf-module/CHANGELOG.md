@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/Foxon-Consulting/cookiecutter-modules/compare/tf-module-1.1.1...tf-module-1.1.2) (2024-06-10)
+
+
+### Bug Fixes
+
+* :bug: ignore standard.yml to avoid issue with secrets ([9ea0e74](https://github.com/Foxon-Consulting/cookiecutter-modules/commit/9ea0e743e374ed2071540cb069fbad6c12671305))
+
 ## [1.1.1](https://github.com/Foxon-Consulting/cookiecutter-modules/compare/tf-module-1.1.0...tf-module-1.1.1) (2024-03-19)
 
 

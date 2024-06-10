@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/Foxon-Consulting/cookiecutter-modules/compare/tf-composition-1.1.1...tf-composition-1.2.0) (2024-06-10)
+
+
+### Features
+
+* **tf-composition:** :wheelchair: improve tutorial purpose ([#33](https://github.com/Foxon-Consulting/cookiecutter-modules/issues/33)) ([5912bae](https://github.com/Foxon-Consulting/cookiecutter-modules/commit/5912baeeb716a9d42bcc9233a9905230447eb628))
+
+
+### Bug Fixes
+
+* :bug: ignore standard.yml to avoid issue with secrets ([9ea0e74](https://github.com/Foxon-Consulting/cookiecutter-modules/commit/9ea0e743e374ed2071540cb069fbad6c12671305))
+
 ## [1.1.1](https://github.com/Foxon-Consulting/cookiecutter-modules/compare/tf-composition-1.1.0...tf-composition-1.1.1) (2024-03-19)
 
 
