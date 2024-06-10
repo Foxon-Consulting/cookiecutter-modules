@@ -1,0 +1,3 @@
+bucket = "foxon-consulting-tf-states-prd"
+key= "{{cookiecutter.__client_formatted}}/{{cookiecutter.__infrastructure_name_formatted}}/prd/prd/{{cookiecutter.__first_layer_formatted}}.tfstate"
+region = "eu-west-1"

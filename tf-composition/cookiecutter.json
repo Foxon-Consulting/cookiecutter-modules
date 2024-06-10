@@ -1,8 +1,12 @@
 {
-    "module_name": "Module Name",
+    "infrastructure_name": "Infrastructure Name",
     "terraform_min_version" : "0.12",
-    "__project_slug": "{{ cookiecutter.module_name|lower|replace(' ', '-') }}",
-    "__module_name_formatted": "{{ cookiecutter.module_name|lower|replace(' ', '_') }}",
+    "client": "internal",
+    "first_layer": "layer",
+    "__project_slug": "{{ cookiecutter.infrastructure_name|lower|replace(' ', '-') }}",
+    "__infrastructure_name_formatted": "{{ cookiecutter.infrastructure_name|lower|replace(' ', '_') }}",
+    "__first_layer_formatted": "{{ cookiecutter.first_layer|lower|replace(' ', '_') }}",
+    "__client_formatted": "{{ cookiecutter.client|lower|replace(' ', '_') }}",
     "_copy_without_render": [
         ".github/workflows/*.yml"
     ]
